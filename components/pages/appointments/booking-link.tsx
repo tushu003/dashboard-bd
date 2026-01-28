@@ -20,7 +20,7 @@ export default function BookingLink() {
   }
 
   return (
-    <Card className="border-border bg-card w-full min-w-0">
+    <Card className="border-border bg-card bg-gradient-to-b from-[#1A1A2E] to-[#16213E] w-full min-w-0">
       <CardHeader className="p-4 sm:p-6 pb-3 sm:pb-4">
         <CardTitle className="text-base sm:text-lg font-semibold text-foreground">
           Booking Link
