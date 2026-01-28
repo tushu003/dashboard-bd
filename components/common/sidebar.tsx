@@ -47,7 +47,7 @@ export default function Sidebar({ isOpen = false, onClose }: SidebarProps) {
 
   return (
     <>
-      {/* Mobile Overlay */}
+      {/* Mobile */}
       {isOpen && (
         <div
           className="fixed inset-0 z-40 bg-black/50 lg:hidden"
@@ -64,7 +64,7 @@ export default function Sidebar({ isOpen = false, onClose }: SidebarProps) {
       >
         <div className="flex h-full flex-col">
           {/* Logo */}
-          <div className="flex h-16 items-center justify-between border-b border-border px-6">
+          <div className="flex h-16 items-center justify-between border-border px-6">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500">
               <Zap className="h-6 w-6 text-white" />
             </div>
