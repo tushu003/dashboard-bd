@@ -92,7 +92,7 @@ export default function Sidebar({ isOpen = false, onClose }: SidebarProps) {
                   className={cn(
                     "group flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all duration-200 relative",
                     isActive
-                      ? "custom-shadow-button text-white"
+                      ? "shadow-[inset_0_0_20px_rgba(87,177,255),0_30px_30px_-14px_#D2EAFF] background-blur  text-white"
                       : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
                   )}
                 >

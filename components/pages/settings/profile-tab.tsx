@@ -43,7 +43,7 @@ export default function ProfileTab({ data, onSave }: ProfileTabProps) {
         <label className="block text-sm font-medium text-muted-foreground mb-3">
           Profile Image
         </label>
-        <div className="flex items-center gap-4">
+        <div className="flex justify-between items-center gap-4">
           <div className="relative">
             <div className="h-20 w-20 rounded-full overflow-hidden border-2 border-blue-500/50 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
               <Image

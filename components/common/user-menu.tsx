@@ -11,7 +11,6 @@ import {
 
 export default function UserMenu() {
   const handleLogout = () => {
-    // Logout logic here
     console.log("Logging out...")
   }
 
