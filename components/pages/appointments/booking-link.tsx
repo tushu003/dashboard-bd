@@ -36,7 +36,7 @@ export default function BookingLink() {
           />
           <Button
             onClick={handleCopy}
-            className="bg-primary hover:bg-primary/90 text-white w-full sm:w-auto whitespace-nowrap text-xs sm:text-sm px-3 sm:px-4"
+            className="shadow-[inset_0_0_20px_rgba(87,177,255)]  hover:bg-primary/90  text-white w-full sm:w-auto whitespace-nowrap text-xs sm:text-sm px-3 sm:px-4"
           >
             {copied ? (
               <>
