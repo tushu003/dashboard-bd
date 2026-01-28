@@ -50,8 +50,8 @@ export default function AppointmentsPage() {
     <div className="flex min-h-screen flex-col overflow-x-hidden w-full">
       <Navbar title="Appointments" onMenuClick={open} />
       
-      <div className="flex-1 overflow-y-auto overflow-x-hidden w-full pt-20 p-3 sm:p-4 md:p-6 lg:p-8">
-        <div className="mx-auto w-full max-w-7xl min-w-0 space-y-4 sm:space-y-5 md:space-y-6">
+      <div className="flex-1 lg:mt-2 overflow-y-auto overflow-x-hidden w-full pt-20 p-3 sm:p-4 md:p-6 lg:p-8">
+        <div className="mx-auto lg:ml-22 max-w-8xl min-w-0 space-y-4 sm:space-y-5 md:space-y-6">
           {/* Summary Cards */}
           <div className="min-w-0 w-full">
             <SummaryCards />

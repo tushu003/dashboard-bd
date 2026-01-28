@@ -104,13 +104,13 @@ export default function CallLogsPage() {
     <div className="flex min-h-screen flex-col">
       <Navbar title="Call Logs & History" onMenuClick={open} />
       
-      <div className="flex-1 overflow-hidden pt-20 p-4 md:p-6 lg:p-8">
-        <div className="mx-auto max-w-7xl h-full flex flex-col">
+      <div className="flex-1 mt-2 overflow-hidden pt-20 p-4 md:p-6 lg:p-8">
+        <div className="mx-auto lg:ml-22 max-w-8xl h-full flex flex-col">
           {/* Search and Filters */}
           <SearchFilters searchQuery={searchQuery} onSearchChange={setSearchQuery} />
 
           {/* Main Content */}
-          <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-6 min-h-0">
+          <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 gap-4 min-h-0">
             {/* Call List */}
             <div className="min-h-0 flex flex-col">
               <CallList

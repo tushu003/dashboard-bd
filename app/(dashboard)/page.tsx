@@ -14,8 +14,8 @@ export default function DashboardPage() {
     <div className="flex min-h-screen flex-col">
       <Navbar title="Dashboard Overview" onMenuClick={open} />
       
-      <div className="flex-1 overflow-y-auto pt-20 p-4 md:p-6 lg:p-8">
-        <div className="mx-auto max-w-7xl space-y-6">
+      <div className="flex-1 mt-2 overflow-y-auto pt-20 p-4 md:p-6 lg:p-8">
+        <div className="mx-auto lg:ml-22 max-w-8xl space-y-6">
           {/* KPI Cards */}
           <KPIGrid />
 
