@@ -65,8 +65,8 @@ export default function Sidebar({ isOpen = false, onClose }: SidebarProps) {
         <div className="flex h-full flex-col">
           {/* Logo */}
           <div className="flex h-16 items-center justify-between border-border px-6">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500">
-              <Zap className="h-6 w-6 text-white" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-r from-[#00FF88] to-[#00D4FF]">
+              <Zap className="h-6 w-6 text-black " />
             </div>
             <Button
               variant="ghost"

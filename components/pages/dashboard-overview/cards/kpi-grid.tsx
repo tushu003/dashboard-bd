@@ -9,7 +9,7 @@ export default function KPIGrid() {
       change: "+12%",
       changeType: "increase" as const,
       icon: Phone,
-      iconColor: "bg-blue-500",
+      iconColor: "bg-gradient-to-br from-[2B7FFF] to-[#00B8DB]",
     },
     {
       title: "AI-Handled Calls",
@@ -17,7 +17,7 @@ export default function KPIGrid() {
       change: "+77%",
       changeType: "increase" as const,
       icon: Bot,
-      iconColor: "bg-purple-500",
+      iconColor: "bg-gradient-to-br from-[#AD46FF] to-[#F6339A]",
     },
     {
       title: "Warm Transfer",
@@ -25,7 +25,7 @@ export default function KPIGrid() {
       change: "+18%",
       changeType: "increase" as const,
       icon: ArrowLeftRight,
-      iconColor: "bg-orange-500",
+      iconColor: "bg-gradient-to-br from-[#FF6900] to-[#FB2C36]",
     },
     {
       title: "Appointments Booked",
@@ -33,7 +33,7 @@ export default function KPIGrid() {
       change: "+8%",
       changeType: "increase" as const,
       icon: Calendar,
-      iconColor: "bg-green-500",
+      iconColor: "bg-gradient-to-br from-[#00C950] to-[#00BC7D]",
     },
     {
       title: "Missed/Failed Calls",
@@ -41,7 +41,7 @@ export default function KPIGrid() {
       change: "-3%",
       changeType: "decrease" as const,
       icon: X,
-      iconColor: "bg-red-500",
+      iconColor: "bg-gradient-to-br from-[#FB2C36] to-[#FF2056]",
     },
     {
       title: "Avg Call Duration",
@@ -49,7 +49,7 @@ export default function KPIGrid() {
       change: "+15%",
       changeType: "increase" as const,
       icon: Clock,
-      iconColor: "bg-blue-500",
+      iconColor: "bg-gradient-to-br from-[#615FFF] to-[#2B7FFF]",
     },
   ]
 

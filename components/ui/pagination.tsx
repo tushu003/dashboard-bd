@@ -20,32 +20,25 @@ export default function Pagination({
     const pages: (number | string)[] = []
     
     if (totalPages <= 7) {
-      // Show all pages if 7 or less
       for (let i = 1; i <= totalPages; i++) {
         pages.push(i)
       }
     } else {
-      // Always show first page
       pages.push(1)
       
-      // Determine how many consecutive pages to show
       if (currentPage <= 4) {
-        // Near start: show 2, 3, 4, 5
         for (let i = 2; i <= Math.min(5, totalPages - 1); i++) {
           pages.push(i)
         }
-        // Add ellipsis if there's a gap
         if (totalPages > 6) {
           pages.push("...")
         }
       } else if (currentPage >= totalPages - 3) {
-        // Near end: show ellipsis then last few pages
         pages.push("...")
         for (let i = Math.max(2, totalPages - 4); i < totalPages; i++) {
           pages.push(i)
         }
       } else {
-        // Middle: show ellipsis, current-1, current, current+1, current+2
         pages.push("...")
         for (let i = currentPage - 1; i <= currentPage + 2; i++) {
           pages.push(i)
@@ -53,7 +46,7 @@ export default function Pagination({
         pages.push("...")
       }
       
-      // Always show last page (if more than 1 page)
+     
       if (totalPages > 1) {
         pages.push(totalPages)
       }

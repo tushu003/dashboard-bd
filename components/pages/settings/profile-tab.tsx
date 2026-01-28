@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Edit2, Pencil } from "lucide-react"
+import { Edit2, SquarePen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import Image from "next/image"
@@ -58,7 +58,7 @@ export default function ProfileTab({ data, onSave }: ProfileTabProps) {
               <button
                 type="button"
               >
-                <Pencil className="h-8 w-8 bg-[#7AA3CC] lg:-mt-9 lg:ml-14 p-1 rounded-lg" />
+                <SquarePen className="h-8 w-8 bg-[#7AA3CC] lg:-mt-9 lg:ml-14 p-1 rounded-lg" />
               </button>
             )}
           </div>
