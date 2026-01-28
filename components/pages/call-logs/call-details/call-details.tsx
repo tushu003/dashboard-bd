@@ -93,7 +93,7 @@ export default function CallDetails({ call }: CallDetailsProps) {
 
         {/* Audio Recording Button */}
         <div>
-          <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white">
+          <Button className="w-full py-2 bg-gradient-to-r from-[#AD46FF]/20 to-[#F6339A]/20 hover:bg-purple-700 text-[#C27AFF]">
             <Play className="mr-2 h-4 w-4" />
             Play Audio Recording
           </Button>
@@ -103,7 +103,7 @@ export default function CallDetails({ call }: CallDetailsProps) {
         {call.transcript && call.transcript.length > 0 && (
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <FileText className="h-5 w-5 text-muted-foreground" />
+              <FileText className="h-5 w-5 text-[#51A2FF] text-muted-foreground" />
               <h3 className="text-sm font-semibold text-foreground">
                 Conversation Transcript
               </h3>
@@ -115,7 +115,7 @@ export default function CallDetails({ call }: CallDetailsProps) {
                   className={cn(
                     "rounded-lg p-3",
                     entry.speaker === "ai"
-                      ? "bg-blue-500/10 border border-blue-500/20"
+                      ? "text-[#51A2FF]"
                       : "bg-muted/50 border border-border"
                   )}
                 >

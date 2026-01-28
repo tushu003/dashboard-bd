@@ -50,7 +50,7 @@ export default function CallListCard({ call, isSelected, onClick }: CallListCard
     >
       <div className="flex items-start gap-3">
         <div className="mt-1 shrink-0">
-          <Phone className="h-5 w-5 text-blue-500" />
+          <Phone className="h-8 w-8 text-white bg-gradient-to-br from-[#2B7FFF] to-[#00B8DB] p-2 rounded-lg" />
         </div>
         
         <div className="flex-1 min-w-0">
@@ -79,10 +79,7 @@ export default function CallListCard({ call, isSelected, onClick }: CallListCard
               <span className="text-xs text-muted-foreground">{call.duration}</span>
             </div>
             <span className="text-xs text-muted-foreground">{call.outcome}</span>
-          </div>
-
-          <div className="flex items-center justify-between mt-2">
-            <span
+                 <span
               className={cn(
                 "px-2 py-0.5 rounded text-xs font-medium border",
                 issueColor
@@ -90,6 +87,10 @@ export default function CallListCard({ call, isSelected, onClick }: CallListCard
             >
               {call.issueType}
             </span>
+          </div>
+
+          <div className="flex items-center justify-between mt-2">
+       
           </div>
         </div>
       </div>
