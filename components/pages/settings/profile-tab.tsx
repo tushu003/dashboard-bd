@@ -43,9 +43,9 @@ export default function ProfileTab({ data, onSave }: ProfileTabProps) {
         <label className="block text-sm font-medium text-muted-foreground mb-3">
           Profile Image
         </label>
-        <div className="flex justify-between items-center gap-4">
+        <div className="flex gap-4">
           <div className="relative">
-            <div className="h-20 w-20 rounded-full overflow-hidden border-2 border-blue-500/50 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
+            <div className="h-20 w-20 rounded-full overflow-hidden border-2 border-blue-500/50]]">
               <Image
                 width={80}
                 height={80}
@@ -57,9 +57,8 @@ export default function ProfileTab({ data, onSave }: ProfileTabProps) {
             {isEditing && (
               <button
                 type="button"
-                className="absolute -bottom-1 -right-1 h-7 w-7 rounded-md bg-blue-500 flex items-center justify-center text-white hover:bg-blue-600 transition-colors shadow-lg border-2 border-background"
               >
-                <Pencil className="h-3.5 w-3.5" />
+                <Pencil className="h-8 w-8 bg-[#7AA3CC] lg:-mt-9 lg:ml-14 p-1 rounded-lg" />
               </button>
             )}
           </div>
@@ -68,7 +67,7 @@ export default function ProfileTab({ data, onSave }: ProfileTabProps) {
               onClick={handleEdit}
               variant="outline"
               size="sm"
-              className="border-blue-500/50 text-blue-400 hover:bg-blue-500/10 hover:text-blue-300 hover:border-blue-500/70 shadow-[0_0_10px_rgba(59,130,246,0.3)] rounded-md"
+              className="border-blue-500/50 text-blue-400 hover:bg-blue-500/10 hover:text-blue-300 hover:border-blue-500/70 shadow-[inset_0_0_20px_rgba(87,177,255),0_20px_30px_-14px_#D2EAFF] lg:mt-12 lg:-ml-4 rounded-full"
             >
               <Edit2 className="mr-2 h-4 w-4" />
               Edit Profile
@@ -80,19 +79,19 @@ export default function ProfileTab({ data, onSave }: ProfileTabProps) {
       {/* Profile Information */}
       {!isEditing ? (
         <div className="space-y-5">
-          <div className="flex items-center justify-between py-2">
+          <div className="flex items-center gap-4 lg:gap-28 pb-4  border-b border-border">
             <span className="text-sm text-muted-foreground">Full Name:</span>
             <span className="text-sm font-medium text-foreground">{formData.fullName}</span>
           </div>
-          <div className="flex items-center justify-between py-2">
+          <div className="flex items-center gap-4 lg:gap-34 pb-4 border-b border-border">
             <span className="text-sm text-muted-foreground">Email:</span>
             <span className="text-sm font-medium text-foreground">{formData.email}</span>
           </div>
-          <div className="flex items-center justify-between py-2">
+          <div className="flex items-center gap-4 lg:gap-23 pb-4 border-b border-border">
             <span className="text-sm text-muted-foreground">Store Name:</span>
             <span className="text-sm font-medium text-foreground">{formData.storeName}</span>
           </div>
-          <div className="flex items-center justify-between py-2">
+          <div className="flex items-center gap-4 lg:gap-20 py-2">
             <span className="text-sm text-muted-foreground">Store Address:</span>
             <span className="text-sm font-medium text-foreground">{formData.storeAddress}</span>
           </div>

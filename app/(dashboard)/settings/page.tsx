@@ -30,7 +30,7 @@ export default function SettingsPage() {
       <Navbar title="Settings" onMenuClick={open} />
       
       <div className="flex-1 overflow-y-auto pt-20 p-4 md:p-6 lg:p-8">
-        <div className="mx-auto max-w-4xl">
+        <div className="lg:ml-24 md:ml-16 ml-8 mt-4 max-w-4xl">
           {/* Tabs */}
           <div className="mb-6 border-b border-border">
             <div className="flex gap-6">
