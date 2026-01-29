@@ -54,8 +54,8 @@ export default function UserMenu() {
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem onClick={handleLogout} className="group text-destructive focus:text-destructive hover:bg-destructive/10 hover:text-destructive">
-          <LogOut className="mr-2 h-4 w-4 transition-colors duration-200 group-hover:text-red-500" />
-          <span className="transition-colors duration-200 group-hover:text-red-500">Log Out</span>
+          <LogOut className="mr-2 h-4 w-4 transition-colors text-black duration-200 group-hover:text-red-500" />
+          <span className="transition-colors text-red-800 duration-200 group-hover:text-red-500">Log Out</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
